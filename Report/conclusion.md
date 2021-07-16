@@ -16,7 +16,6 @@ Titanic datasets, Machine Learning model, Python, Sklearn
 	Maximum accuracy reached is 83% using Logistic Regression, Random Forest Classifier and KNN.  
 
 ## Results 
-### Logistic Regression
 |Model|Accuracy| Precision| Recall| F1-Score|
 |---|---|---|---|---|
 |Logistic Regression|83|84|83|83|
