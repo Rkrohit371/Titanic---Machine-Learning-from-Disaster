@@ -7,10 +7,10 @@
 
 
 import pandas as pd
-import numpy as np
+# import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[205]:
@@ -296,7 +296,7 @@ print(X_train.shape, X_test.shape, y_train.shape, y_test.shape)
 # In[264]:
 
 
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 scaler.fit(X_train)
 X_train = scaler.transform(X_train)
@@ -328,7 +328,7 @@ lr.fit(X_train, y_train)
 
 
 preds = lr.predict(X_test)
-preds
+# preds
 
 
 # In[269]:
@@ -368,7 +368,7 @@ rf.fit(X_train, y_train)
 
 
 rf_preds = rf.predict(X_test)
-rf_preds
+# rf_preds
 
 
 # In[275]:
@@ -396,7 +396,7 @@ dt.fit(X_train, y_train)
 
 
 dt_pred = dt.predict(X_test)
-dt_pred
+# dt_pred
 
 
 # In[279]:
@@ -424,7 +424,7 @@ gnb.fit(X_train, y_train)
 
 
 gnb_preds = gnb.predict(X_test)
-gnb_preds
+# gnb_preds
 
 
 # In[283]:
@@ -452,7 +452,7 @@ knn.fit(X_train, y_train)
 
 
 knn_preds = knn.predict(X_test)
-knn_preds
+# knn_preds
 
 
 # In[287]:
@@ -471,7 +471,7 @@ test['Fare'].mean()
 
 
 test['Fare'].fillna(test['Fare'].mean(), inplace=True)
-test.info()
+# test.info()
 
 
 # In[296]:
@@ -485,21 +485,21 @@ test.min(axis=0)
 
 
 submit_predictions = lr.predict(test)
-submit_predictions
+# submit_predictions
 
 
 # In[298]:
 
 
 submit_predictions_df = pd.DataFrame(submit_predictions, columns=['Survived'])
-submit_predictions_df.shape
+# submit_predictions_df.shape
 
 
 # In[299]:
 
 
 test_passenderId = test_df['PassengerId'].reset_index()
-test_passenderId.shape
+# test_passenderId.shape
 
 
 # In[300]:
@@ -511,7 +511,7 @@ submission_data = pd.concat([test_passenderId['PassengerId'], submit_predictions
 # In[301]:
 
 
-submission_data.shape
+# submission_data.shape
 
 
 # In[302]:
