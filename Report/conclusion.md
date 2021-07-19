@@ -1,13 +1,13 @@
 # Problem statement  
 Titanic - Machine Learning from Disaster 
 
-## Aim  
+# Aim  
 Predict survival on the Titanic and get familiar with Machine Learning basics
 
-## Requirements  
+# Requirements  
 Titanic datasets, Machine Learning model, Python, Sklearn
 
-## Description  
+# Description  
 	The dataset contains two file train.csv and test.csv. 
 	Training data is use for traning the model while testing data is use for the submission on the Kaggle. 
 	Data visualization tells that more number of male died than female. 
@@ -15,7 +15,7 @@ Titanic datasets, Machine Learning model, Python, Sklearn
 	I have used five Machine Learning models which are Logistic Regression, Random Forest Classifier, Decision Tree Classifier, Gaussian Naive Base and KNN to solve the problem. 
 	Maximum accuracy reached is 83% using Logistic Regression, Random Forest Classifier and KNN.  
 
-## Results 
+# Results 
 |Model|Accuracy| Precision| Recall| F1-Score|
 |---|---|---|---|---|
 |Logistic Regression|83|84|83|83|
